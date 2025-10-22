@@ -33,29 +33,11 @@ The project is divided into three layers, each serving a specific purpose:
   - **Fact Tables** (containing measurable business events)
   - **Dimension Tables** (containing descriptive attributes)
 - Designed for efficient analytical queries and reporting.
-```
-Example structure:
-Fact_Sales
-├── sale_id
-├── customer_id
-├── product_id
-├── store_id
-├── date_id
-├── total_amount
-└── quantity
 
-Dim_Customer
-├── customer_id
-├── customer_name
-├── region
-└── gender
+This diagram shows the source data and medallion layers for the project:
 
-Dim_Product
-├── product_id
-├── product_name
-├── category
-└── price
-```
+![Data Architecture](docs/data_architecture.png)
+
 ---
 
 ## 🧠 Key Concepts Demonstrated  
