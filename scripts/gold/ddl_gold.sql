@@ -66,7 +66,7 @@ SELECT
     pn.prd_start_dt as start_date
 from silver.crm_prd_info pn
 LEFT JOIN silver.erp_px_cat_g1v2 pc
-on pn.prd_key = pc.id
+on pn.cat_id = pc.id
 WHERE prd_end_dt is NULL   -- filter out all historical data
 GO
 
